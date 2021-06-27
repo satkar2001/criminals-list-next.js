@@ -28,10 +28,8 @@ export const getStaticPaths = async () => {
   const Details = ({ criminals }) => {
     return (
       <div>
-        <h1>{ criminals.name }</h1>
-        <p>{ criminals.email }</p>
-        <p>{ criminals.website }</p>
-        <p>{ criminals.address.city }</p>
+        <h1>Name:{ criminals.name }</h1>
+        <p>Location of arrest:{ criminals.address.city }</p>
       </div>
     );
   }
